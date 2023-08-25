@@ -12,7 +12,7 @@ export const Bio = {
     "https://drive.google.com/file/d/1paGT1LoGTY2MHXXb5TxJMXthlPEb4sfr/view?usp=drive_link",
   linkedin: "linkedin.com/in/tejas-shiwankar-099b8021b",
   // twitter: "https://twitter.com/RishavChanda",
-  insta: "https://www.instagram.com/rishav_chanda/",
+  insta: "https://www.instagram.com/tejas795834/",
   // facebook: "https://www.facebook.com/rishav.chanda.165/",
 };
 
