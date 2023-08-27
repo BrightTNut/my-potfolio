@@ -12,6 +12,10 @@ export const Container = styled.div`
     clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
 `;
 
+
+  
+
+
 export const Wrapper = styled.div`
     position: relative;
     display: flex;

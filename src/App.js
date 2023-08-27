@@ -14,6 +14,8 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import {motion} from "framer-motion";
+
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -26,21 +28,62 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
+
 function App() {
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0
+  });
+  const [cursorVariant, setCursorVariant] = useState("default");
+
+
+  useEffect(() => {
+    const mouseMove = e => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY
+      })
+    }
+
+    window.addEventListener("mousemove", mouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    }
+  }, []);
+  const variants = {
+    default: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16,
+    },
+    text: {
+      height: 150,
+      width: 150,
+      x: mousePosition.x - 75,
+      y: mousePosition.y - 75,
+      backgroundColor: "yellow",
+      mixBlendMode: "difference"
+    }
+  }
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
+
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   console.log(openModal)
   return (
+    
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router >
         <Navbar />
-        <Body>
+        <Body onMouseEnter={textEnter} onMouseLeave={textLeave}>
+          <motion.div className="cursor" variants={variants} animate={cursorVariant}/>
           <HeroSection />
           <Wrapper>
             <Skills />
             <Experience />
           </Wrapper>
-          {/* <Projects openModal={openModal} setOpenModal={setOpenModal} /> */}
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
             <Education />
             <Contact />
