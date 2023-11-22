@@ -1,3 +1,4 @@
+import IMGNFT from "../images/index";
 export const Bio = {
   name: "Tejas Shiwankar",
   roles: [
@@ -309,8 +310,9 @@ export const projects = [
     date: "Jun 2023 - Aug 2023",
     description:
       "I'm developing an NFT marketplace using an API, enabling users to easily create, trade, and purchase unique digital assets as NFTs. The API integration ensures secure authentication, seamless minting of NFTs through blockchain, and smooth user transactions. This project aims to simplify the NFT experience for artists and collectors, fostering a vibrant ecosystem of digital ownership and creativity.",
-    image:
-      "https://photos.app.goo.gl/uQKQBGkmbjQdBamW6",
+    
+      image: IMGNFT.NFTIMG
+           ,
     tags: [
       "Javascript",
       "AWS",
