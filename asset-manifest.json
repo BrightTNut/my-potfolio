@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/my-potfolio/static/css/main.0823d926.css",
-    "main.js": "/my-potfolio/static/js/main.105be8c0.js",
+    "main.js": "/my-potfolio/static/js/main.ea5d870e.js",
+    "static/media/nft.png": "/my-potfolio/static/media/nft.ccd793297643786a1c70.png",
     "static/media/my pic.jpeg": "/my-potfolio/static/media/my pic.7abedb7a31ac74ada7a5.jpeg",
     "index.html": "/my-potfolio/index.html",
     "main.0823d926.css.map": "/my-potfolio/static/css/main.0823d926.css.map",
-    "main.105be8c0.js.map": "/my-potfolio/static/js/main.105be8c0.js.map"
+    "main.ea5d870e.js.map": "/my-potfolio/static/js/main.ea5d870e.js.map"
   },
   "entrypoints": [
     "static/css/main.0823d926.css",
-    "static/js/main.105be8c0.js"
+    "static/js/main.ea5d870e.js"
   ]
 }
