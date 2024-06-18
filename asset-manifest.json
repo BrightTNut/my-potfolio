@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/my-potfolio/static/css/main.0823d926.css",
+    "main.js": "/my-potfolio/static/js/main.cf244ddc.js",
+    "static/media/nft.png": "/my-potfolio/static/media/nft.ccd793297643786a1c70.png",
+    "static/media/RandomGif.png": "/my-potfolio/static/media/RandomGif.455961a964ebf95e9c86.png",
+    "static/media/todofirebase.png": "/my-potfolio/static/media/todofirebase.1b89edc0e5611577817e.png",
+    "static/media/iphone15.png": "/my-potfolio/static/media/iphone15.565577199f7ef4b9dd9c.png",
+    "static/media/coffee.png": "/my-potfolio/static/media/coffee.7de3732814302c247902.png",
+    "static/media/my pic.jpeg": "/my-potfolio/static/media/my pic.7abedb7a31ac74ada7a5.jpeg",
+    "static/media/part1.png": "/my-potfolio/static/media/part1.07d103a6b37fe8831254.png",
+    "index.html": "/my-potfolio/index.html",
+    "main.0823d926.css.map": "/my-potfolio/static/css/main.0823d926.css.map",
+    "main.cf244ddc.js.map": "/my-potfolio/static/js/main.cf244ddc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0823d926.css",
+    "static/js/main.cf244ddc.js"
+  ]
+}
